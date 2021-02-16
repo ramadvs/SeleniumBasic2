@@ -2,17 +2,18 @@ package SeleniumSessions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebdriverBasics {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
 		
-		WebDriver driver = new ChromeDriver();
+		//WebDriver driver = new ChromeDriver();
 		
-		//System.setProperty("webdriver.gecko.driver", "C:\\FirefoxGeckoDriver\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\FirefoxGeckoDriver\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		
-		//WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new FirefoxDriver();
 		
 		driver.get("https://www.google.com");
 		

@@ -1,4 +1,6 @@
-package SeleniumSessions;
+package AlertsAndPopUps;
+
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -11,6 +13,11 @@ public class AlertPopUpConcept {
 		
         System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");		
 		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		

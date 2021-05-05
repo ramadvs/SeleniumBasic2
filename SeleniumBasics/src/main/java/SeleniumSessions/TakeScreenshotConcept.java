@@ -20,7 +20,7 @@ public class TakeScreenshotConcept {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         		
-		driver.get("http://google.com/");
+		driver.get("http://Whiteboxqa.com/");
 		
 		 //take ScreenShot and store as a file format
 		
@@ -28,9 +28,9 @@ public class TakeScreenshotConcept {
 		 
 		 //Now copy the screenshot to desired location using copy file method
 		 
-		 FileUtils.copyFile(src, new File("C:\\Users\\rsunk\\git\\SelenumBasics\\SeleniumBasics\\screenshots.png"));
+		 FileUtils.copyFile(src, new File("C:\\Users\\rsunk\\git\\SelenumBasics\\SeleniumBasics\\images\\screenshots.png"));
 
-
+         driver.close();
 		
 		
 	}
